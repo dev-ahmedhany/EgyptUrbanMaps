@@ -36,13 +36,14 @@
         }
       ],
       [
-        "react-native-admob-native-ads",
+        "react-native-google-mobile-ads",
         {
           "androidAppId": "ca-app-pub-2982967112085282~1848985864",
-          "iosAppId": "ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy",
-          "facebookMediation": false
+          "iosAppId": "ca-app-pub-2982967112085282~1848985864",
+          "userTrackingUsageDescription": "This identifier will be used to deliver personalized ads to you."
         }
-      ]
+      ],
+      "expo-tracking-transparency"
     ],
     "experiments": {
       "typedRoutes": true

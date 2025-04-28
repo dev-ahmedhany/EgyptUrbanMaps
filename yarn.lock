@@ -1169,6 +1169,11 @@
     find-up "^5.0.0"
     js-yaml "^4.1.0"
 
+"@iabtcf/core@^1.5.3":
+  version "1.5.6"
+  resolved "https://registry.yarnpkg.com/@iabtcf/core/-/core-1.5.6.tgz#92568d89252fbf205aa65836703cb0a52e812382"
+  integrity sha512-u2q9thI9vLurYZdGtyJsDYOqoeLc4EgQsYGSc+UVibYII61B/ENJPZS6eFlML1F0hSoTR/goptpo5nGRDkKd2w==
+
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
   resolved "https://registry.yarnpkg.com/@isaacs/cliui/-/cliui-8.0.2.tgz#b37667b7bc181c168782259bab42474fbf52b550"
@@ -2888,6 +2893,11 @@ depd@2.0.0:
   resolved "https://registry.yarnpkg.com/depd/-/depd-2.0.0.tgz#b696163cc757560d09cf22cc8fad1571b79e76df"
   integrity sha512-g7nH6P6dyDioJogAAGprGpCtVImJhpPk/roCzdb3fIh61/s/nPsfR6onyMwkCAR/OlC3yBC0lESvUoQEAssIrw==
 
+dequal@^2.0.2:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/dequal/-/dequal-2.0.3.tgz#2644214f1997d39ed0ee0ece72335490a7ac67be"
+  integrity sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==
+
 destroy@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.2.0.tgz#4803735509ad8be552934c67df614f94e66fa015"
@@ -3277,6 +3287,11 @@ expo-system-ui@~4.0.9:
   dependencies:
     "@react-native/normalize-colors" "0.76.8"
     debug "^4.3.2"
+
+expo-tracking-transparency@~5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/expo-tracking-transparency/-/expo-tracking-transparency-5.1.1.tgz#e1b52d4006fd752cdb1aeca2790fa8bc8cdca679"
+  integrity sha512-fiT079Wf5YOPIqc2osTuPrQsOn4+5kXMRQmjUqe3z5PdeCF8nqJg5qrOLP1vaG5Cq8J8ws3Q2Sc7q4kR2G0yTw==
 
 expo-web-browser@~14.0.2:
   version "14.0.2"
@@ -5739,11 +5754,6 @@ react-is@^16.13.1, react-is@^16.7.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-native-admob-native-ads@^0.7.6:
-  version "0.7.6"
-  resolved "https://registry.yarnpkg.com/react-native-admob-native-ads/-/react-native-admob-native-ads-0.7.6.tgz#1e6e2d0dac466ac68e2c8530ba855f3f82812989"
-  integrity sha512-nApNDUVKrjXqwSxxrIvn1R0IJQs3VHwViK6G4Mbo2irNW8iP/RYC/t6fvvbH9emtHle0AYTwvwIW5JiuieuN8Q==
-
 react-native-gesture-handler@~2.20.2:
   version "2.20.2"
   resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-2.20.2.tgz#73844c8e9c417459c2f2981bc4d8f66ba8a5ee66"
@@ -5753,6 +5763,14 @@ react-native-gesture-handler@~2.20.2:
     hoist-non-react-statics "^3.3.0"
     invariant "^2.2.4"
     prop-types "^15.7.2"
+
+react-native-google-mobile-ads@^15.1.0:
+  version "15.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-google-mobile-ads/-/react-native-google-mobile-ads-15.1.0.tgz#99b89eb0e25daaa97321c025be14d1b3cbfe0d3e"
+  integrity sha512-a2iisb8LVNlMKYb2eFMpH+fF4CLdSXaS+4Q/rzQmY/EfYSCvEpiUZLIcshJqExmh1i7RpHbWTqAuLTphz/aioQ==
+  dependencies:
+    "@iabtcf/core" "^1.5.3"
+    use-deep-compare-effect "^1.8.1"
 
 react-native-helmet-async@2.0.4:
   version "2.0.4"
@@ -6862,6 +6880,14 @@ url-parse@^1.5.3:
   dependencies:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
+
+use-deep-compare-effect@^1.8.1:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/use-deep-compare-effect/-/use-deep-compare-effect-1.8.1.tgz#ef0ce3b3271edb801da1ec23bf0754ef4189d0c6"
+  integrity sha512-kbeNVZ9Zkc0RFGpfMN3MNfaKNvcLNyxOAAd9O4CBZ+kCBXXscn9s/4I+8ytUER4RDpEYs5+O6Rs4PqiZ+rHr5Q==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    dequal "^2.0.2"
 
 use-latest-callback@^0.2.1:
   version "0.2.3"
