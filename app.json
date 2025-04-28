@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "EgyptUrbanMaps",
+    "slug": "EgyptUrbanMaps",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "dev.ahmedhany.egypturbanmaps"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "dev.ahmedhany.egypturbanmaps"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "react-native-admob-native-ads",
+        {
+          "androidAppId": "ca-app-pub-2982967112085282~1848985864",
+          "iosAppId": "ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy",
+          "facebookMediation": false
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
