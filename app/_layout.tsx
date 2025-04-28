@@ -8,7 +8,6 @@ import { AppState, AppStateStatus, Platform } from 'react-native';
 import 'react-native-reanimated';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
-import AdMobAppOpenAd from '@/components/AdMobAppOpenAd';
 
 // App Open Ad Unit ID
 const APP_OPEN_AD_UNIT_ID = 'ca-app-pub-2982967112085282/1833733485';
@@ -81,14 +80,6 @@ export default function RootLayout() {
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />
-      
-      {showAppOpenAd && (
-        <AdMobAppOpenAd
-          adUnitId={APP_OPEN_AD_UNIT_ID}
-          onClose={() => setShowAppOpenAd(false)}
-          onError={() => setShowAppOpenAd(false)}
-        />
-      )}
     </ThemeProvider>
   );
 }
